@@ -7,10 +7,13 @@
   /* margin: auto; */
 }
 .button {
-  /* border: rgb(16, 2, 2) 1px solid; */
+  border: rgb(16, 2, 2) 1px solid;
   height: 3rem;
   width: 10rem;
   margin: 1rem auto;
+  border-radius: 15px;
+  cursor: pointer;
+
   /* justify-content: center; */
 }
 label {

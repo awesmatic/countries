@@ -1,0 +1,74 @@
+[debug] [2022-04-24T05:55:38.521Z] ----------------------------------------------------------------------
+[debug] [2022-04-24T05:55:38.524Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\HP-PC\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting
+[debug] [2022-04-24T05:55:38.525Z] CLI Version:   10.7.1
+[debug] [2022-04-24T05:55:38.525Z] Platform:      win32
+[debug] [2022-04-24T05:55:38.525Z] Node Version:  v16.13.2
+[debug] [2022-04-24T05:55:38.527Z] Time:          Sun Apr 24 2022 11:25:38 GMT+0530 (India Standard Time)
+[debug] [2022-04-24T05:55:38.527Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-04-24T05:55:38.652Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-04-24T05:55:38.653Z] > authorizing via signed-in user (saurabhrauthan4@gmail.com)
+[debug] [2022-04-24T05:55:38.653Z] [iam] checking project countries-2b316 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-04-24T05:55:38.657Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/countries-2b316:testIamPermissions [none]
+[debug] [2022-04-24T05:55:38.658Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/countries-2b316:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-04-24T05:55:40.652Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/countries-2b316:testIamPermissions 200
+[debug] [2022-04-24T05:55:40.652Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/countries-2b316:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-04-24T05:55:40.655Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/countries-2b316 [none]
+[debug] [2022-04-24T05:55:41.476Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/countries-2b316 200
+[debug] [2022-04-24T05:55:41.476Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/countries-2b316 {"projectId":"countries-2b316","projectNumber":"882200988314","displayName":"countries","name":"projects/countries-2b316","resources":{"hostingSite":"countries-2b316"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'countries-2b316'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-04-24T05:55:41.490Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/countries-2b316 [none]
+[debug] [2022-04-24T05:55:42.426Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/countries-2b316 200
+[debug] [2022-04-24T05:55:42.426Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/countries-2b316 {"projectId":"countries-2b316","projectNumber":"882200988314","displayName":"countries","name":"projects/countries-2b316","resources":{"hostingSite":"countries-2b316"},"state":"ACTIVE"}
+[debug] [2022-04-24T05:55:42.432Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/882200988314/sites/countries-2b316/versions [none]
+[debug] [2022-04-24T05:55:42.433Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/882200988314/sites/countries-2b316/versions {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-04-24T05:55:44.745Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/882200988314/sites/countries-2b316/versions 200
+[debug] [2022-04-24T05:55:44.746Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/882200988314/sites/countries-2b316/versions {"name":"projects/882200988314/sites/countries-2b316/versions/4cefc23a08b2a192","status":"CREATED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[countries-2b316]: beginning deploy... 
+[info] i  hosting[countries-2b316]: found 12 files in build 
+[debug] [2022-04-24T05:55:44.775Z] [hosting] uploading with 200 concurrency
+[debug] [2022-04-24T05:55:44.940Z] [hosting] hash cache [YnVpbGQ] stored for 12 files
+[debug] [2022-04-24T05:55:44.940Z] [hosting][hash queue][FINAL] {"max":149,"min":5,"avg":25.666666666666668,"active":0,"complete":12,"success":12,"errored":0,"retried":0,"total":12,"elapsed":160}
+[debug] [2022-04-24T05:55:44.941Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/882200988314/sites/countries-2b316/versions/4cefc23a08b2a192:populateFiles [none]
+[debug] [2022-04-24T05:55:44.941Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/882200988314/sites/countries-2b316/versions/4cefc23a08b2a192:populateFiles {"files":{"/favicon.ico":"eae62e993eb980ec8a25058c39d5a51feab118bd2100c4deebb2a9c158ec11f9","/logo192.png":"3ee59515172ee198f3be375979df15ac5345183e656720a381b8872b2a39dc8b","/logo512.png":"ee7e2f3fdb8209c4b6fd7bef6ba50d1b9dba30a25bb5c3126df057e1cb6f5331","/manifest.json":"aff3449bdc238776f5d6d967f19ec491b36aed5fb7f23ccff6500736fd58494a","/robots.txt":"bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49","/asset-manifest.json":"ceb447fcbdf3d57b207504a52f652382b8bf0b5836aa6da0f0d2adf1aca67428","/index.html":"5b6d6b602743592854242c7494544acc4fc419997c0768aa55af87f982b16d4c","/static/css/main.bc49506e.css":"bed67f4d462c67e9649b78a6a3e2c3b93d398defd0facc8049b8aeeb8d9e3c6e","/static/css/main.bc49506e.css.map":"7d7b9387604133f5e9564961351c89c894b6550ec118e6ad3e3e1b94a8cd21ea","/static/js/main.d6dd9a18.js.LICENSE.txt":"a1e10079e8155bc5525d13d0464e64acbd892cb93e51621cce5f31f1c4cc8fe3","/static/js/main.d6dd9a18.js":"59c7d54bce92a0933f99540c9022bd890aaf551f10057b6881535a2918122688","/static/js/main.d6dd9a18.js.map":"c3899e115bc0ebf89a0fb4bc4c4f0bb4080d8b9de5b859e8c256dd14e1824442"}}
+[debug] [2022-04-24T05:55:46.984Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/882200988314/sites/countries-2b316/versions/4cefc23a08b2a192:populateFiles 200
+[debug] [2022-04-24T05:55:46.984Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/882200988314/sites/countries-2b316/versions/4cefc23a08b2a192:populateFiles {"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/countries-2b316/versions/4cefc23a08b2a192/files"}
+[debug] [2022-04-24T05:55:46.985Z] [hosting][populate queue][FINAL] {"max":2047,"min":2047,"avg":2047,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":2047}
+[debug] [2022-04-24T05:55:46.985Z] [hosting] uploads queued: 0
+[debug] [2022-04-24T05:55:46.985Z] [hosting][upload queue][FINAL] {"max":0,"min":9999999999,"avg":0,"active":0,"complete":0,"success":0,"errored":0,"retried":0,"total":0,"elapsed":1650779746985}
+[info] +  hosting[countries-2b316]: file upload complete 
+[debug] [2022-04-24T05:55:46.987Z] [hosting] deploy completed after 2239ms
+[debug] [2022-04-24T05:55:46.993Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "countries-2b316"
+    },
+    "site": "countries-2b316",
+    "version": "projects/882200988314/sites/countries-2b316/versions/4cefc23a08b2a192"
+  }
+]
+[info] i  hosting[countries-2b316]: finalizing version... 
+[debug] [2022-04-24T05:55:46.996Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/882200988314/sites/countries-2b316/versions/4cefc23a08b2a192 updateMask=status%2Cconfig
+[debug] [2022-04-24T05:55:46.996Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/882200988314/sites/countries-2b316/versions/4cefc23a08b2a192 {"status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]}}
+[debug] [2022-04-24T05:55:49.262Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/882200988314/sites/countries-2b316/versions/4cefc23a08b2a192 200
+[debug] [2022-04-24T05:55:49.263Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/882200988314/sites/countries-2b316/versions/4cefc23a08b2a192 {"name":"projects/882200988314/sites/countries-2b316/versions/4cefc23a08b2a192","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2022-04-24T05:55:44.290365Z","createUser":{"email":"saurabhrauthan4@gmail.com"},"finalizeTime":"2022-04-24T05:55:48.916218Z","finalizeUser":{"email":"saurabhrauthan4@gmail.com"}}
+[debug] [2022-04-24T05:55:49.263Z] [hosting] finalized version for countries-2b316:[object Object]
+[info] +  hosting[countries-2b316]: version finalized 
+[info] i  hosting[countries-2b316]: releasing new version... 
+[debug] [2022-04-24T05:55:49.268Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/882200988314/sites/countries-2b316/releases versionName=projects%2F882200988314%2Fsites%2Fcountries-2b316%2Fversions%2F4cefc23a08b2a192
+[debug] [2022-04-24T05:55:49.269Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/882200988314/sites/countries-2b316/releases {"message":null}
